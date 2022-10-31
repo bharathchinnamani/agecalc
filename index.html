@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Age-Calculator" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" content-type="text/css" rel="stylesheet">
+    <link rel="icon" href="./index.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:ital@1&family=Roboto:ital,wght@1,500&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+</html>
+<body onload="form1.reset()">
+<!--age calculator html code-->
+    <h1 class="heading">Age Calculator</h1>
+    <p class="sub">(Using HTML,CSS and JS)</p>
+    <div class="cont"> 
+        <form name="form1">
+        <div id="lab"><label for="dob">Hi Friend! Kindly Enter your date of birth.
+        </label>
+        </div> 
+        <div class="ip"><input type="date" name="dob" id="dob" required></div>
+        </form>
+        <div class="btn-container">
+            <button type="button" id="btn" onclick="calcAge()">Calculate Age</button>
+            <button type="button" id="btn-reset" onclick="resett()">Reset</button>
+        </div>
+        <div id="no-input"></div>
+</div>
+
+</div>
+<div id="result-cont-1">
+    <div id="year-res"></div>
+    <div id="month-res"></div>
+    <div id="week-res"></div>
+    <div id="day-res"></div>
+    <div id="hour-res"></div>
+    <div id="min-res"></div>
+    <div id="sec-res"></div>
+</div>
+<div id="dummy"></div>
+<script src="./script.js"></script>
+</body>
